@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB11310C2829006A0029F69B /* UserNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11310B2829006A0029F69B /* UserNew.swift */; };
+		CB11310E282900A90029F69B /* TaskNew.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11310D282900A90029F69B /* TaskNew.swift */; };
+		CB1131112829022D0029F69B /* testCircle.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB11310F2829022D0029F69B /* testCircle.xcdatamodeld */; };
+		CB11317E2829131B0029F69B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11317D2829131B0029F69B /* CoreDataManager.swift */; };
+		CB11318028291AD70029F69B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11317F28291AD70029F69B /* DataManager.swift */; };
+		CB113182282925250029F69B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113181282925250029F69B /* NewViewController.swift */; };
+		CB113187282953130029F69B /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113183282953130029F69B /* User+CoreDataClass.swift */; };
+		CB113188282953130029F69B /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113184282953130029F69B /* User+CoreDataProperties.swift */; };
+		CB113189282953130029F69B /* Task+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113185282953130029F69B /* Task+CoreDataClass.swift */; };
+		CB11318A282953130029F69B /* Task+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113186282953130029F69B /* Task+CoreDataProperties.swift */; };
 		CBE3CFE42820EC9900C70677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE32820EC9900C70677 /* AppDelegate.swift */; };
 		CBE3CFE62820EC9900C70677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */; };
 		CBE3CFE82820EC9900C70677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE72820EC9900C70677 /* ViewController.swift */; };
@@ -16,6 +26,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB11310B2829006A0029F69B /* UserNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNew.swift; sourceTree = "<group>"; };
+		CB11310D282900A90029F69B /* TaskNew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskNew.swift; sourceTree = "<group>"; };
+		CB1131102829022D0029F69B /* testCircle.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = testCircle.xcdatamodel; sourceTree = "<group>"; };
+		CB11317D2829131B0029F69B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		CB11317F28291AD70029F69B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		CB113181282925250029F69B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		CB113183282953130029F69B /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CB113184282953130029F69B /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB113185282953130029F69B /* Task+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CB113186282953130029F69B /* Task+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Task+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		CBE3CFE02820EC9900C70677 /* testCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE3CFE32820EC9900C70677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +57,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CB11318B282953260029F69B /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CB113183282953130029F69B /* User+CoreDataClass.swift */,
+				CB113184282953130029F69B /* User+CoreDataProperties.swift */,
+				CB113185282953130029F69B /* Task+CoreDataClass.swift */,
+				CB113186282953130029F69B /* Task+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		CBE3CFD72820EC9900C70677 = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +87,20 @@
 		CBE3CFE22820EC9900C70677 /* testCircle */ = {
 			isa = PBXGroup;
 			children = (
+				CB11318B282953260029F69B /* CoreData */,
 				CBE3CFE32820EC9900C70677 /* AppDelegate.swift */,
 				CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */,
 				CBE3CFE72820EC9900C70677 /* ViewController.swift */,
+				CB113181282925250029F69B /* NewViewController.swift */,
 				CBE3CFE92820EC9900C70677 /* Main.storyboard */,
 				CBE3CFEC2820EC9A00C70677 /* Assets.xcassets */,
 				CBE3CFEE2820EC9A00C70677 /* LaunchScreen.storyboard */,
 				CBE3CFF12820EC9A00C70677 /* Info.plist */,
+				CB11310B2829006A0029F69B /* UserNew.swift */,
+				CB11310D282900A90029F69B /* TaskNew.swift */,
+				CB11310F2829022D0029F69B /* testCircle.xcdatamodeld */,
+				CB11317D2829131B0029F69B /* CoreDataManager.swift */,
+				CB11317F28291AD70029F69B /* DataManager.swift */,
 			);
 			path = testCircle;
 			sourceTree = "<group>";
@@ -138,9 +176,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB11310C2829006A0029F69B /* UserNew.swift in Sources */,
+				CB11318028291AD70029F69B /* DataManager.swift in Sources */,
 				CBE3CFE82820EC9900C70677 /* ViewController.swift in Sources */,
+				CB11310E282900A90029F69B /* TaskNew.swift in Sources */,
+				CB113187282953130029F69B /* User+CoreDataClass.swift in Sources */,
 				CBE3CFE42820EC9900C70677 /* AppDelegate.swift in Sources */,
 				CBE3CFE62820EC9900C70677 /* SceneDelegate.swift in Sources */,
+				CB113188282953130029F69B /* User+CoreDataProperties.swift in Sources */,
+				CB113182282925250029F69B /* NewViewController.swift in Sources */,
+				CB1131112829022D0029F69B /* testCircle.xcdatamodeld in Sources */,
+				CB11318A282953130029F69B /* Task+CoreDataProperties.swift in Sources */,
+				CB113189282953130029F69B /* Task+CoreDataClass.swift in Sources */,
+				CB11317E2829131B0029F69B /* CoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +408,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB11310F2829022D0029F69B /* testCircle.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB1131102829022D0029F69B /* testCircle.xcdatamodel */,
+			);
+			currentVersion = CB1131102829022D0029F69B /* testCircle.xcdatamodel */;
+			path = testCircle.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CBE3CFD82820EC9900C70677 /* Project object */;
 }

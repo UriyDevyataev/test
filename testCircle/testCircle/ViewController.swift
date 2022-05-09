@@ -8,7 +8,9 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var circleIn: UIView!
+    @IBOutlet weak var circleOut: UIView!
+    
     @IBOutlet weak var propConstraint: NSLayoutConstraint!
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var circleView: UIView!
@@ -19,6 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         config()
+        configCircle()
     }
     
     override func viewDidLayoutSubviews() {
@@ -26,6 +29,11 @@ class ViewController: UIViewController {
         if circleView.layer.cornerRadius != circleView.frame.width / 2 {
             configUI()
         }
+        
+        if circleOut.layer.cornerRadius != circleOut.frame.width / 2 {
+            configCircleUI()
+        }
+        
     }
     
     func config() {
@@ -36,20 +44,39 @@ class ViewController: UIViewController {
         image.contentMode = .scaleAspectFill
     }
     
+    func configCircle() {
+        circleIn.backgroundColor = .black
+        circleOut.backgroundColor = .red
+        
+    }
+    
+    func configCircleUI() {
+        circleOut.clipsToBounds = false
+        circleOut.layoutIfNeeded()
+        print()
+        circleOut.layer.cornerRadius = circleOut.bounds.width / 2
+        circleIn.layer.cornerRadius = circleIn.bounds.width / 2
+        
+    }
+    
     func configUI() {
         circleView.layoutIfNeeded()
         circleView.layer.cornerRadius = circleView.frame.width / 2
     }
 
     @IBAction func actionButton(_ sender: UIButton) {
-        let screen = createScreen(someView: circleView)
-        let frame = circleView.convert(circleView.bounds, to: self.view)
-        screen.frame = frame
-        view.addSubview(screen)
         
-        isTap = !isTap
+        UIView.animate(withDuration: 0.3) {
+            self.circleOut.transform = CGAffineTransform.init(rotationAngle: CGFloat.pi/4)
+        }
+//        let screen = createScreen(someView: circleView)
+//        let frame = circleView.convert(circleView.bounds, to: self.view)
+//        screen.frame = frame
+//        view.addSubview(screen)
+        
+//        isTap = !isTap
 //        animateConstraint()
-        animateAdding(someView: screen)
+//        animateAdding(someView: screen)
     }
     
     func createScreen(someView: UIView) -> UIImageView {
