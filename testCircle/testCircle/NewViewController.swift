@@ -17,23 +17,27 @@ class NewViewController: UIViewController {
     }
     
     @IBAction func actionShow(_ sender: UIButton) {
-        let users = dataManager.users
-        print("users.count - \(users.count)")
-        print("---------")
-        users.forEach { user in
-            print("id - \(user.id)")
-            print("name - \(user.name ?? "qqqq")")
-            print("task count - \(user.task?.count ?? 999)")
-            if let array = user.task as? Set<Task> {
-                array.forEach{ task in
-                    print("id - \(task.id)")
-                    print("name - \(task.name ?? "qqqq")")
-                    print("user?.name - \(task.user?.name ?? "qqqq")")
-                    print("///////")
-                }
-            }
-            print("__________________")
-        }
+        let coreDataManager = CoreDataManager.instanse
+        let group = coreDataManager.loadData(type: Group.self)
+        print(group.count)
+        
+//        let users = dataManager.users
+//        print("users.count - \(users.count)")
+//        print("---------")
+//        users.forEach { user in
+//            print("id - \(user.id)")
+//            print("name - \(user.name ?? "qqqq")")
+//            print("task count - \(user.task?.count ?? 999)")
+//            if let array = user.task as? Set<Task> {
+//                array.forEach{ task in
+//                    print("id - \(task.id)")
+//                    print("name - \(task.name ?? "qqqq")")
+//                    print("user?.name - \(task.user?.name ?? "qqqq")")
+//                    print("///////")
+//                }
+//            }
+//            print("__________________")
+//        }
         
 //        let user = getUser(id: Int(inputText.text!)!)
 //        print(user?.name ?? "qqqq")
@@ -82,5 +86,10 @@ class NewViewController: UIViewController {
         let task = arrayTask[0]
         task.user = dataManager.users[1]
         dataManager.updateData()
+    }
+    
+    func createGroup() {
+        
+//        let washing = Washing()
     }
 }

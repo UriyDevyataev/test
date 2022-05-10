@@ -2,7 +2,7 @@
 //  Task+CoreDataProperties.swift
 //  testCircle
 //
-//  Created by Юрий Девятаев on 09.05.2022.
+//  Created by Юрий Девятаев on 10.05.2022.
 //
 //
 
@@ -16,9 +16,10 @@ extension Task {
         return NSFetchRequest<Task>(entityName: "Task")
     }
 
-    @NSManaged public var name: String?
     @NSManaged public var id: Int32
+    @NSManaged public var name: String?
     @NSManaged public var user: User?
+    @NSManaged public var group: Group?
 
 }
 
