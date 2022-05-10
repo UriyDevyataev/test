@@ -20,11 +20,14 @@ protocol DataManager {
 
 class DataManagerImp: DataManager {
     
-    
     static let instanse: DataManager = DataManagerImp()
     private let coreDataManager = CoreDataManager.instanse
     
     var users = [User]()
+    
+    private init() {
+        loadData()
+    }
     
     private func saveData() {
         coreDataManager.saveContext()
@@ -33,10 +36,6 @@ class DataManagerImp: DataManager {
     
     private func loadData() {
         users = coreDataManager.loadContext()
-    }
-    
-    private init() {
-        loadData()
     }
     
     // MARK: User

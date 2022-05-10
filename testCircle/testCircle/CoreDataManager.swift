@@ -16,7 +16,9 @@ final class CoreDataManager {
         return persistentContainer.viewContext
     }
 
-    private init() {}
+    private init() {
+        firstCreateDefaultGroup()
+    }
 
     private lazy var persistentContainer: NSPersistentContainer = {
         let container = NSPersistentContainer(name: "testCircle")
@@ -55,6 +57,22 @@ final class CoreDataManager {
         return array.sorted{$0.id < $1.id}
     }
     
+    func loadData<T>(type: T.Type) -> [T] {
+        var data = [T]()
+        let entityName = String(describing: T.self)
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: entityName)
+        do {
+            let result = try context.fetch(fetchRequest)
+            if let objects = result as? [T] {
+                data = objects
+            }
+            print("\(T.self) count: \(result.count)")
+        } catch {
+            print(error.localizedDescription)
+        }
+        return data
+    }
+    
     func getUser(id: Int) -> User? {
         let request = User.fetchRequest()
         request.predicate = NSPredicate(format: "id == %d", id)
@@ -63,6 +81,37 @@ final class CoreDataManager {
             return result?[0]
         }
         return nil
+    }
+    
+    private func firstCreateDefaultGroup() {
+        
+        let data = loadData(type: Group.self)
+        if data.count != 0 {
+            return
+        }
+                
+        let washingTaskNames = ["Помыть пол", "Помыть окна", "Помыть ванну"]
+        let creatingTaskNames = ["Приготовить ужин", "Сходить за покупками"]
+        
+        let groups: [(name: String, color: String, taskNames: [String])] = [
+            ("Washing", "red", washingTaskNames),
+            ("Creating", "yellow", creatingTaskNames)
+        ]
+        
+        for (index, value) in groups.enumerated() {
+            let group = Group(context: context)
+            group.id = Int32(index)
+            group.isDefault = true
+            group.name = value.name
+            group.color = value.color
+            value.taskNames.forEach { name in
+                let taskName = TaskName(context: context)
+                taskName.name = name
+                taskName.isDefault = true
+                taskName.group = group
+            }
+        }
+        saveContext()
     }
     
 //    func loadData<T>() -> [T] {
