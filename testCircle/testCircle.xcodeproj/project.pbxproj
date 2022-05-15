@@ -20,6 +20,7 @@
 		CB11317E2829131B0029F69B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11317D2829131B0029F69B /* CoreDataManager.swift */; };
 		CB11318028291AD70029F69B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11317F28291AD70029F69B /* DataManager.swift */; };
 		CB113182282925250029F69B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113181282925250029F69B /* NewViewController.swift */; };
+		CB921B8928314B9E003B7367 /* CustomPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB921B8828314B9E003B7367 /* CustomPopUpView.swift */; };
 		CBE3CFE42820EC9900C70677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE32820EC9900C70677 /* AppDelegate.swift */; };
 		CBE3CFE62820EC9900C70677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */; };
 		CBE3CFE82820EC9900C70677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE72820EC9900C70677 /* ViewController.swift */; };
@@ -42,6 +43,7 @@
 		CB11317D2829131B0029F69B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		CB11317F28291AD70029F69B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CB113181282925250029F69B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		CB921B8828314B9E003B7367 /* CustomPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopUpView.swift; sourceTree = "<group>"; };
 		CBE3CFE02820EC9900C70677 /* testCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE3CFE32820EC9900C70677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				CBE3CFE32820EC9900C70677 /* AppDelegate.swift */,
 				CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */,
 				CBE3CFE72820EC9900C70677 /* ViewController.swift */,
+				CB921B8828314B9E003B7367 /* CustomPopUpView.swift */,
 				CB113181282925250029F69B /* NewViewController.swift */,
 				CBE3CFE92820EC9900C70677 /* Main.storyboard */,
 				CBE3CFEC2820EC9A00C70677 /* Assets.xcassets */,
@@ -187,6 +190,7 @@
 			files = (
 				CB000F1D282A2BD90062D2E0 /* Group+CoreDataProperties.swift in Sources */,
 				CB000F21282A2BD90062D2E0 /* User+CoreDataProperties.swift in Sources */,
+				CB921B8928314B9E003B7367 /* CustomPopUpView.swift in Sources */,
 				CB000F1E282A2BD90062D2E0 /* Task+CoreDataClass.swift in Sources */,
 				CB11318028291AD70029F69B /* DataManager.swift in Sources */,
 				CB000F1F282A2BD90062D2E0 /* Task+CoreDataProperties.swift in Sources */,
