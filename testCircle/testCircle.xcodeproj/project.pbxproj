@@ -21,6 +21,7 @@
 		CB11318028291AD70029F69B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11317F28291AD70029F69B /* DataManager.swift */; };
 		CB113182282925250029F69B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113181282925250029F69B /* NewViewController.swift */; };
 		CB921B8928314B9E003B7367 /* CustomPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB921B8828314B9E003B7367 /* CustomPopUpView.swift */; };
+		CBBC1F852839182F003F7F73 /* NewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC1F842839182F003F7F73 /* NewLayout.swift */; };
 		CBE3CFE42820EC9900C70677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE32820EC9900C70677 /* AppDelegate.swift */; };
 		CBE3CFE62820EC9900C70677 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */; };
 		CBE3CFE82820EC9900C70677 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE72820EC9900C70677 /* ViewController.swift */; };
@@ -44,6 +45,7 @@
 		CB11317F28291AD70029F69B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CB113181282925250029F69B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
 		CB921B8828314B9E003B7367 /* CustomPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopUpView.swift; sourceTree = "<group>"; };
+		CBBC1F842839182F003F7F73 /* NewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLayout.swift; sourceTree = "<group>"; };
 		CBE3CFE02820EC9900C70677 /* testCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBE3CFE32820EC9900C70677 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				CB11318B282953260029F69B /* CoreData */,
 				CBE3CFE32820EC9900C70677 /* AppDelegate.swift */,
 				CBE3CFE52820EC9900C70677 /* SceneDelegate.swift */,
+				CBBC1F842839182F003F7F73 /* NewLayout.swift */,
 				CBE3CFE72820EC9900C70677 /* ViewController.swift */,
 				CB921B8828314B9E003B7367 /* CustomPopUpView.swift */,
 				CB113181282925250029F69B /* NewViewController.swift */,
@@ -204,6 +207,7 @@
 				CB113182282925250029F69B /* NewViewController.swift in Sources */,
 				CB1131112829022D0029F69B /* testCircle.xcdatamodeld in Sources */,
 				CB11317E2829131B0029F69B /* CoreDataManager.swift in Sources */,
+				CBBC1F852839182F003F7F73 /* NewLayout.swift in Sources */,
 				CB000F20282A2BD90062D2E0 /* User+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
