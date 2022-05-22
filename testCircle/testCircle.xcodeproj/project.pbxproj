@@ -20,6 +20,9 @@
 		CB11317E2829131B0029F69B /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11317D2829131B0029F69B /* CoreDataManager.swift */; };
 		CB11318028291AD70029F69B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB11317F28291AD70029F69B /* DataManager.swift */; };
 		CB113182282925250029F69B /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB113181282925250029F69B /* NewViewController.swift */; };
+		CB401D18283A20E00079EA62 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB401D15283A20E00079EA62 /* NotificationManager.swift */; };
+		CB401D19283A20E00079EA62 /* NotificationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB401D17283A20E00079EA62 /* NotificationDelegate.swift */; };
+		CB401D1B283A20F60079EA62 /* CustomNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB401D1A283A20F60079EA62 /* CustomNotification.swift */; };
 		CB921B8928314B9E003B7367 /* CustomPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB921B8828314B9E003B7367 /* CustomPopUpView.swift */; };
 		CBBC1F852839182F003F7F73 /* NewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBBC1F842839182F003F7F73 /* NewLayout.swift */; };
 		CBE3CFE42820EC9900C70677 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBE3CFE32820EC9900C70677 /* AppDelegate.swift */; };
@@ -44,6 +47,9 @@
 		CB11317D2829131B0029F69B /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		CB11317F28291AD70029F69B /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		CB113181282925250029F69B /* NewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		CB401D15283A20E00079EA62 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		CB401D17283A20E00079EA62 /* NotificationDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationDelegate.swift; sourceTree = "<group>"; };
+		CB401D1A283A20F60079EA62 /* CustomNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNotification.swift; sourceTree = "<group>"; };
 		CB921B8828314B9E003B7367 /* CustomPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopUpView.swift; sourceTree = "<group>"; };
 		CBBC1F842839182F003F7F73 /* NewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewLayout.swift; sourceTree = "<group>"; };
 		CBE3CFE02820EC9900C70677 /* testCircle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testCircle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +88,32 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		CB401D13283A20E00079EA62 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB401D1A283A20F60079EA62 /* CustomNotification.swift */,
+				CB401D14283A20E00079EA62 /* Implementation */,
+				CB401D16283A20E00079EA62 /* Protocols */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CB401D14283A20E00079EA62 /* Implementation */ = {
+			isa = PBXGroup;
+			children = (
+				CB401D15283A20E00079EA62 /* NotificationManager.swift */,
+			);
+			path = Implementation;
+			sourceTree = "<group>";
+		};
+		CB401D16283A20E00079EA62 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				CB401D17283A20E00079EA62 /* NotificationDelegate.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
 		CBE3CFD72820EC9900C70677 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +140,7 @@
 				CBE3CFE72820EC9900C70677 /* ViewController.swift */,
 				CB921B8828314B9E003B7367 /* CustomPopUpView.swift */,
 				CB113181282925250029F69B /* NewViewController.swift */,
+				CB401D13283A20E00079EA62 /* Services */,
 				CBE3CFE92820EC9900C70677 /* Main.storyboard */,
 				CBE3CFEC2820EC9A00C70677 /* Assets.xcassets */,
 				CBE3CFEE2820EC9A00C70677 /* LaunchScreen.storyboard */,
@@ -191,6 +224,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB401D1B283A20F60079EA62 /* CustomNotification.swift in Sources */,
 				CB000F1D282A2BD90062D2E0 /* Group+CoreDataProperties.swift in Sources */,
 				CB000F21282A2BD90062D2E0 /* User+CoreDataProperties.swift in Sources */,
 				CB921B8928314B9E003B7367 /* CustomPopUpView.swift in Sources */,
@@ -206,6 +240,8 @@
 				CB000F13282A20A10062D2E0 /* Group.swift in Sources */,
 				CB113182282925250029F69B /* NewViewController.swift in Sources */,
 				CB1131112829022D0029F69B /* testCircle.xcdatamodeld in Sources */,
+				CB401D19283A20E00079EA62 /* NotificationDelegate.swift in Sources */,
+				CB401D18283A20E00079EA62 /* NotificationManager.swift in Sources */,
 				CB11317E2829131B0029F69B /* CoreDataManager.swift in Sources */,
 				CBBC1F852839182F003F7F73 /* NewLayout.swift in Sources */,
 				CB000F20282A2BD90062D2E0 /* User+CoreDataClass.swift in Sources */,
